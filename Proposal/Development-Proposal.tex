@@ -1,0 +1,161 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{mathptmx}
+\usepackage{setspace}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{subfigure}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[title]{appendix}
+\usepackage{bm}
+\usepackage{tcolorbox}
+\usepackage{apacite}
+\usepackage[flushleft]{threeparttable}
+
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+\usepackage{diagbox}
+
+
+
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\addtolength{\jot}{0.5em}
+\linespread{1}
+
+\begin{document}
+\include{Development-Proposal-Titlepage}
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+
+\begin{quotation}
+	Women belong in all places where decisions are being made
+\begin{flushright}
+-Ruth Bader Ginsburg
+\end{flushright}
+\end{quotation}
+
+\section{Introduction and Motivation}
+The central topic of this research is the relationship between women's participation in the law-making process and the well-being of the country's citizens.
+More specifically, this research is trying to discover the relationship between the ratio of female lawmakers in a country's legislative body and the national health care expenditure.
+
+In 2015, United Nations (UN) presented a new framework aiming to improve the sustainable development of the world, naming it as "Sustainable Development Goals" (SDGs).
+This framework includes 17 bulletins, and the fifth goal is "achieve gender equality and empower all women and girls".
+This high priority of gender equality indicates the importance of this issue with regard to the general development of human welfare.
+
+In fact, the relationship between economic development and the empowerment of women had been long discussed by various scholars.
+\citeA{Duflo2012} documented a series of papers researching the relationship between women's empowerment and economic development.
+In general, the research agrees on a positive relationship between women's empowerment and economic development, and the relationship goes in both ways.
+In the paper, \citeauthor{Duflo2012} admitted that although with limitations, women's empowerment can lead to improvements such as children's health and nutrition.
+One potential mechanism that enables such improvement is budget allocation.
+Women can influence the item being purchased, and therefore influence the welfare.
+This conclusion, from the micro-level, had been supported by numerous researchers.
+\citeA{Hoddinott1995} studied the data from Cote d'Ivoire and found that women tend to spend household income on family-friendly items such as nutrition rather than alcohol or cigarette.
+And such spending increasing has a positive influence on children's health.
+Similarly, \citeA{Quisumbing2003} argues that in some countries the increase of female members' assets will lead to the increase of expenditure on children's education. 
+The evidence above arguable proved that at least at the household level, females tend to be better budget makers than males on the issues of health and education. 
+
+Not only at the household level, but the presentation of women in other fields has also been proved to have a positive influence.
+In governing, \citeA{Dollar2001} provided evidence to show that the involvement of female officers in government can reduce the overall corruption level.
+But this result had been questioned by other scholars (such as \citeNP{Sung2003}) since this effect can be caused by a better democratic system that encourages more women participation and dampens the corruption, rather than the other way around. 
+Taking this measurement into account, however, later research still finds the benefits of involving women in country-level decision-making.
+Especially in the legislative body where lawmakers are responsible for making laws and designing budgets.
+\citeA{Jayasuriya2013} collected data from over 100 countries and concludes that the country with a higher participation rate of women in the law-making process tends to have a higher economic growth rate in general.
+As a subjective indicator, \citeA{York2014} presented the result that people tend to have a higher life-satisfaction rate if their national parliament or house of deputies has a higher ratio of female members.  
+The influence of female lawmakers also extends to other more specific fields.
+For example, through the budget control, \citeA{Salahodjaev2020} showed an "S" shape relationship between a country's deforestation level and proportion of women members in the legislative body. 
+The deforestation will decrease with the female number counts increase.
+Such decreasing will meet some bottleneck, but once the ratio breaks a certain threshold, the deforestation rate will keep moving down.
+
+With all the research presented above, the relationship between women's participation in the parliament and the national health expenditure, which is closely related to the well-being of citizens, especially after the covid-19 pandemic, has rarely been discussed. 
+Most of the studies with regard the health expenditures are focused on either the low-level government officers (for instance the municipal level in \citeNP{Funk2018}) or the administrative branch of the national government (see \citeNP{Mavisakalyan2014}).
+This research tries to make up the gap by discovering the relationship between the ratio of female lawmakers and the national health expenditure through a data-driven quantitative centric method.
+The methodology and data set will be discussed in the following sections.
+
+
+\section{Methodology, Data, and Preliminary Analsysis}
+This research will employ a simple multi-variable Ordinary Least Square (OLS) model to investigate the relationship between the ratio of female members in the legislative body and national health expenditure.
+
+The left-hand side variable of the model will be the ratio of the country's domestic health care expenditure to GDP.
+The primary right-hand side controlled variable will be the percentage of female members of the country's legislative body.
+
+Suggested by the common practice in the field of development and health economics, three variables are added to the model to measure health expenditure.
+The first is the national GDP per capita level.
+The second is the percentage of the population aged 64 or higher.
+The last variable is the prevalence level of contagious disease.
+In this research, tuberculosis (TB) is the selected disease.
+Considering the developing countries, especially countries in Africa rely heavily on foreign aid to help establish the health care system, an extra variable measured the Official Development Assistance (ODA) is added into the model to capture relevant influence.
+Inspired by \citeA{Sung2003} and \citeA{Jayasuriya2013}, this model will contain the female labor participation level variable.
+This variable helps eliminate the influence of a better system.
+In other words, a country with more females participating in the labor market or has more female lawmakers may indicate the country is more modern since it encourages the participation of women workers, and therefore more likely to provide a better health system.
+By including the labor participation labor, we could largely eliminate such influence.
+Other related variables such as the girls' enrollment rate in the secondary education system can also be used in the research as a substitution of the labor participation rate to test the robustness of the model. 
+Finally, the democracy index variable will be used to test the different influences of legislative bodies in democratic countries and non-democratic countries.
+By including this variable, the model will reveal the influence of the presentation of women, even when the law-making body is just a rubber stamp.
+
+The primary source of the data is the World Bank Open Data\footnote{visit: https://data.worldbank.org/}.
+And the measurement of democracy level comes from the Democracy Matrix.\footnote{This project is hosted by the University of Wurzburg. Source: https://www.democracymatrix.com/download}
+
+Overall, the data set been used in this research contains 122 countries with annual data from 2000 to 2019, right before the break of the Covid-19 pandemic.
+The data set covered the major economies and countries in different development levels.
+The choice of the time frame is restricted by the availability of data.
+
+The summary statistics and the correlations among those variables are presented below.
+\begin{table}[]
+\begin{tabular}{lcccccccc}
+\hline
+                                                  &  & mean    &  & Std. deviation &  & min    &  & max      \\ \hline
+Female Lawmaker (\%)                              &  & 19.66   &  & 11.64          &  & 0.00   &  & 63.75    \\
+Health Expenditure (\% GDP)                       &  & 3.46    &  & 2.19           &  & 0.12   &  & 11.58    \\
+GDP per capita (US\$)                             &  & 13401.4 &  & 18987.59       &  & 111.9  &  & 123514.2 \\
+Female Labor Participation (\%)                   &  & 51.14   &  & 14.59          &  & 12.4   &  & 87.81    \\
+Official Development Assistance per capita (US\$) &  & 38.26   &  & 60.31          &  & -49.54 &  & 688.09   \\
+Population 64+ (\%)                               &  & 8.72    &  & 5.85           &  & 0.69   &  & 28.00    \\
+Incident of Tuberculosis (per 100,000 people)     &  & 131.7   &  & 201.31         &  & 0.00   &  & 1270.00  \\
+Democracy index                                   &  & 0.67    &  & 0.25           &  & 0.05   &  & 0.98     \\ \hline
+\end{tabular}
+\begin{tablenotes}
+\small
+      \item Note: The negative value of Official Development Assistance is caused by the pay back of loan.
+    \end{tablenotes}
+    \caption{The summary statistics of variables}
+\end{table}
+
+\begin{table}[h]\centering\begin{tabular}{rrrrrrrrr}  \hline & lawmaker & healthExp & gdp & labPar & ODA & oldAge & TB & democra \\   \hline lawmaker & 1.00 & &  &  &  &  &  & \\   healthExp & 0.44 & 1.00 &  & &  &  & & \\   gdp & 0.33 & 0.61 & 1.00 &  &  &  &  &  \\   labPar & 0.26 & -0.06 & 0.09 & 1.00 &  &  &  &  \\   ODA & -0.19 & -0.25 & -0.35 & -0.08 & 1.00 &  &  &  \\   oldAge & 0.30 & 0.76 & 0.58 & -0.03 & -0.35 & 1.00 &  &  \\   TB & -0.06 & -0.33 & -0.34 & 0.19 & 0.17 & -0.45 & 1.00 &  \\   democra & 0.20 & 0.52 & 0.45 & 0.07 & -0.13 & 0.58 & -0.16 & 1.00 \\    \hline\end{tabular}
+\caption{The correlation among variables}
+\label{correlation}\end{table}
+
+Because of the quality of databases, missing data rarely appear, however, they still exist in certain series.
+Due to the time constrain, the missing data is handled by replacing it with the mean value of the corresponding series. 
+Although it largely will not influence the research, further discussion will be conducted in the full research paper.
+
+%From Table \ref{correlation}, we could see that the national health expenditure (healthExp) has strong positive correlation coefficients with GDP per capita (gdp), percentage of the aged population (oldAge).
+
+\section{Expected Results and Further Investigation}
+At this stage of the research, I will expect a positive coefficient between the lawmaker variable and the health expenditure variable, despite the setting of the model.
+The magnitude and the significant level of the coefficient, however, needs further investigation, and it is likely to variate dramatically with the change of the model.
+
+Based on the multivariable regression model, other variables would be considered to provide a more holistic understanding of the research problem.
+One potential extension is to simplify the foreign aid variable to a dummy variable.
+The variable will equal one while the country at the year receives foreign aid while being zero if not receive aid or have to pay the loan more than received aid.
+This variable will test the general effect of receiving aid, on the expenditure of national health.
+
+Some countries can be given specific attention due to their characteristics. 
+At this stage, I will have a closer look at the following countries:
+\begin{enumerate}
+	\item Rwanda: This is the country with the highest participation rate of women in the lawmaking process, but it is also a highly underdeveloped country, so the study of it will be representable about the topic of this research.
+	\item Japan: As a member of the Organisation for Economic Cooperation and Development (OECD), Japan has a high economic development level and the lowest rate of women in the parliament among all OECD members. Due to the aging of society, Japan also has a high expenditure on the health care system. I expect to compare Japan with other developed and aged societies such as Italy to discover the effect of women's participation in the parliament in developed economics.
+	\item United Arab Emirates and China: Both countries have a higher than average women's participation rate in the law-making body and both countries have a robust and strong economic growth which can help the increase of the health expenditure. However, due to the political system, the influence of the parliaments and the female lawmakers is questionable in both countries. Diving deep into these two countries can provide a better understanding of how the mechanism of women's influence on budget-making works in non-democratic countries. 
+\end{enumerate}
+
+
+
+\newpage
+\bibliographystyle{apacite}
+\bibliography{export.bib}
+
+\end{document}

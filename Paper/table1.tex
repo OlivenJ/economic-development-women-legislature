@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{mathptmx}
+\usepackage{setspace}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{subfigure}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[title]{appendix}
+\usepackage{bm}
+\usepackage{tcolorbox}
+\usepackage{apacite}
+\usepackage[flushleft]{threeparttable}
+\usepackage{lscape}
+\usepackage{rotating}
+
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+\usepackage{diagbox}
+
+
+
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\addtolength{\jot}{0.5em}
+\linespread{1.5}
+
+\begin{document}
+
+\begin{sidewaystable}[h]
+\resizebox{\textheight}{!}{
+\centering
+\begin{tabular}{lllllllll}
+\hline
+                                                  & (1)                                                               & (2)                                                               & (3)                                                               & (4)                                                               & (5)                                                               & (6)                                                                                    & (7)                                                                &  \\ \hline
+Female Lawmaker (\%)                              & \begin{tabular}[c]{@{}l@{}}0.085$^{***}$\\ (0.004)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}0.087$^{***}$\\ (0.003)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}0.096$^{***}$\\ (0.004)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}0.089$^{***}$\\ (0.004)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}0.096$^{***}$\\ (0.004)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}0.098$^{***}$\\ (0.004)\end{tabular}                        & \begin{tabular}[c]{@{}l@{}}0.113$^{***}$\\ (0.007)\end{tabular}    &  \\
+GDP per capita (US\$)                             & \begin{tabular}[c]{@{}l@{}}0.00003$^{***}$\\ (0.000)\end{tabular} & \begin{tabular}[c]{@{}l@{}}0.00003$^{***}$\\ (0.000)\end{tabular} & \begin{tabular}[c]{@{}l@{}}0.00003$^{***}$\\ (0.000)\end{tabular} & \begin{tabular}[c]{@{}l@{}}0.00003$^{***}$\\ (0.000)\end{tabular} & \begin{tabular}[c]{@{}l@{}}0.00003$^{***}$\\ (0.000)\end{tabular} & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}0.00001$^{***}$\\ (0.000)\end{tabular}} & \begin{tabular}[c]{@{}l@{}}0.000019$^{***}$\\ (0.000)\end{tabular} &  \\
+Population 64+ (\%)                               & \begin{tabular}[c]{@{}l@{}}0.153$^{***}$\\ (0.01)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.146$^{***}$\\ (0.01)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.172$^{***}$\\ (0.011)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}0.147$^{***}$\\ (0.01)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.172$^{***}$\\ (0.011)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}-0.0001\\ (0.021)\end{tabular}                              & \begin{tabular}[c]{@{}l@{}}0.005\\ (0.025)\end{tabular}            &  \\
+Population 0-14 (\%)                              & \begin{tabular}[c]{@{}l@{}}-0.096$^{***}$\\ (0.14)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}-0.086$^{***}$\\ (0.013)\end{tabular}  & \begin{tabular}[c]{@{}l@{}}-0.062$^{***}$\\ (0.013)\end{tabular}  & \begin{tabular}[c]{@{}l@{}}-0.088$^{***}$\\ (0.012)\end{tabular}  & \begin{tabular}[c]{@{}l@{}}-0.063$^{***}$\\ (0.013)\end{tabular}  & \begin{tabular}[c]{@{}l@{}}-0.09$^{***}$\\ (0.017)\end{tabular}                        & \begin{tabular}[c]{@{}l@{}}-0.089$^{***}$\\ (0.019)\end{tabular}   &  \\
+Incident of Tuberculosis (per 100,000 people)     &                                                                   & \begin{tabular}[c]{@{}l@{}}-0.001$^{***}$\\ (0.0002)\end{tabular} & \begin{tabular}[c]{@{}l@{}}-0.001$^{***}$\\ (0.0002)\end{tabular} & \begin{tabular}[c]{@{}l@{}}-0.001$^{***}$\\ (0.000)\end{tabular}  & \begin{tabular}[c]{@{}l@{}}-0.001$^{***}$\\ (0.0002)\end{tabular} & \begin{tabular}[c]{@{}l@{}}-0.002$^{***}$\\ (0.0003)\end{tabular}                      & \begin{tabular}[c]{@{}l@{}}-0.031$^{***}$\\ (0.004)\end{tabular}   &  \\
+Female Labor Participation (\%)                   &                                                                   &                                                                   & \begin{tabular}[c]{@{}l@{}}-0.028$^{***}$\\ (0.0034)\end{tabular} &                                                                   & \begin{tabular}[c]{@{}l@{}}-0.028$^{***}$\\ (0.003)\end{tabular}  & \begin{tabular}[c]{@{}l@{}}-0.031$^{***}$\\ (0.004)\end{tabular}                       & \begin{tabular}[c]{@{}l@{}}-0.031$^{***}$\\ (0.004)\end{tabular}   &  \\
+Official Development Assistance per capita (US\$) &                                                                   &                                                                   &                                                                   & \begin{tabular}[c]{@{}l@{}}0.001$^{*}$\\ (0.000)\end{tabular}     & \begin{tabular}[c]{@{}l@{}}0.0009\\ (0.0008)\end{tabular}         & \begin{tabular}[c]{@{}l@{}}-0.001$^{*}$\\ (0.0009)\end{tabular}                        & \begin{tabular}[c]{@{}l@{}}-0.001$^{*}$\\ (0.001)\end{tabular}     &  \\
+Democracy index                                   &                                                                   &                                                                   &                                                                   &                                                                   &                                                                   & \begin{tabular}[c]{@{}l@{}}5.743$^{***}$\\ (0.331)\end{tabular}                        & \begin{tabular}[c]{@{}l@{}}5.199$^{***}$\\ (0.784)\end{tabular}    &  \\
+Lawmaker Dummy                                    &                                                                   &                                                                   &                                                                   &                                                                   &                                                                   &                                                                                        & \begin{tabular}[c]{@{}l@{}}-6.02$^{*}$\\ (0.227)\end{tabular}      &  \\
+Democracy Dummy                                   &                                                                   &                                                                   &                                                                   &                                                                   &                                                                   &                                                                                        & \begin{tabular}[c]{@{}l@{}}0.198\\ (0.239)\end{tabular}            &  \\
+Intersection Term                                 &                                                                   &                                                                   &                                                                   &                                                                   &                                                                   &                                                                                        & \begin{tabular}[c]{@{}l@{}}0.283\\ (0.248)\end{tabular}            &  \\
+Fixed Effect: Year                                & YES                                                               & YES                                                               & YES                                                               & YES                                                               & YES                                                               & YES                                                                                    & YES                                                                &  \\
+Fixed Effect: Country                             &                                                                   &                                                                   &                                                                   &                                                                   &                                                                   &                                                                                        & NO                                                                 &  \\
+Adjust $R^2$                                      & 0.337                                                             & 0.339                                                             & 0.346                                                             & 0.340                                                             & 0.346                                                             & 0.402                                                                                  & 0.402                                                              &  \\ \hline
+\end{tabular}}
+\end{sidewaystable}
+
+\end{document}

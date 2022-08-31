@@ -1,0 +1,257 @@
+
+\section{Empirical Findings}
+\label{Empirical findings}
+
+\subsection{Global Overview}
+We first examine the effect of the female lawmaker ratio in parliament on the country's health care expenditure from a global perspective.
+{\setstretch{1.0}
+\begin{table}[H]
+\centering
+\begin{tabular}{l|llll}
+\hline
+                                              & (1)                                                               & (2)                                                                & (3)                                                               & (4)                                                                \\ \hline
+Female Lawmaker(\%)                          & \begin{tabular}[c]{@{}l@{}}0.087$^{***}$\\ (0.003)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}0.008\\ (0.009)\end{tabular}            & \begin{tabular}[c]{@{}l@{}}0.096$^{***}$\\ (0.004)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}0.006\\ (0.009)\end{tabular}            \\
+GDP per capita (US\$)                         & \begin{tabular}[c]{@{}l@{}}0.00003$^{***}$\\ (0.000)\end{tabular} & \begin{tabular}[c]{@{}l@{}}0.00004$^{***}$\\ (0.0000)\end{tabular} & \begin{tabular}[c]{@{}l@{}}0.00003$^{***}$\\ (0.000)\end{tabular} & \begin{tabular}[c]{@{}l@{}}0.00003$^{***}$\\ (0.0000)\end{tabular} \\
+Population 64+ (\%)                           & \begin{tabular}[c]{@{}l@{}}0.146$^{***}$\\ (0.01)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.317$^{***}$\\ (0.041)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.172$^{***}$\\ (0.011)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}0.271$^{***}$\\ (0.044)\end{tabular}    \\
+Population 0-14 (\%)                          & \begin{tabular}[c]{@{}l@{}}-0.086$^{***}$\\ (0.013)\end{tabular}  & \begin{tabular}[c]{@{}l@{}}-0.275$^{***}$\\ (0.032)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}-0.062$^{***}$\\ (0.013)\end{tabular}  & \begin{tabular}[c]{@{}l@{}}-0.261$^{***}$\\ (0.032)\end{tabular}   \\
+TB cases & \begin{tabular}[c]{@{}l@{}}-0.001$^{***}$\\ (0.0002)\end{tabular} & \begin{tabular}[c]{@{}l@{}}0.002$^{***}$\\ (0.0006)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}-0.001$^{***}$\\ (0.0002)\end{tabular} & \begin{tabular}[c]{@{}l@{}}0.002$^{***}$\\ (0.0006)\end{tabular}   \\
+Labor Participation Rate (\%)               &                                                                   &                                                                    & \begin{tabular}[c]{@{}l@{}}-0.028$^{***}$\\ (0.0034)\end{tabular} & \begin{tabular}[c]{@{}l@{}}0.067$^{***}$\\ (0.015)\end{tabular}    \\
+Fixed Effect: Year                            & YES                                                               & YES                                                                & YES                                                               & YES                                                                \\
+Fixed Effect: Country                         & NO                                                                & YES                                                                & NO                                                                & YES                                                                \\
+Observations:                              & 2318                                                               & 2318                                                                & 2318                                                               & 2318                                                                \\
+Adjust $R^2$                                  & 0.339                                                             & 0.892                                                              & 0.346                                                             & 0.893                                                              \\ \hline
+\end{tabular}
+\begin{tablenotes}
+\small
+      \item Note: Notation $***$,$**$,$*$,$\#$ denotes a significant level of 0.0001, 0.001, 0.05, and 0.1 respectively.
+    \end{tablenotes}
+
+\caption{Regression results of models measuring the relatinship between country's health care expenditure to the total national budget and the ratio of female lawmakers in the country's parliament. }
+\label{Baseline}
+
+\end{table}
+}
+
+For Table (\ref{Baseline}), the odd number columns represent the fixed effect model only controle the year, and the even-number columns contain both years fixed effect and country fixed effect.
+The latter two columns contain the labor participation rate to adjust the influence of a better system.
+The female lawmaker ratio has a positive sign in all four models, without regard to the labor ratio participation rate.
+
+However, the significant influence of the female lawmaker ratio is erased after adding the country-level fixed effect into the model.
+
+All other variables, including economy development measurement (GDP per capita) the demography indicators (aged population and youth population, and the measurement of the contagious disease (TB cases) that are suggested by the \citeA{Hitiris1992} and \citeA{Gerdtham2000}, and the labor participation rate variables are consistently significant across all scenarios.
+Other than the youth population variable, all other variables have a positive sign.
+This is aligned with the conventional belief about their relationship with the health care expenditure.
+
+Contradict with the previous research results, one possible explanation for the non-significant coefficient of the female lawmaker variables is that other variables are the deterministic factors for the expenditure of health care.
+Therefore, the variables suggested by both \citeA{Hitiris1992} and \citeA{Gerdtham2000} will overpower the lawmaker ratio, causing the non-significant coefficient. 
+
+\subsection{Grouping Discussion}
+\label{Grouping}
+Noticing the different results before and after introducing the country-level fixed effect variable, it is reasonable to assume that the country's heterogeneity would influence the regression results.
+Hence, the countries are categorized into different subgroups for further analysis based on different criteria.
+\subsubsection{Rich Countries versus Poor Countries}
+We conduct the regression analysis for different income-level groups, and the results are presented in table (\ref{Income Level}).
+{\setstretch{1.0}
+\begin{table}[]
+\centering
+\begin{tabular}{l|llll}
+\hline
+                                              & \begin{tabular}[c]{@{}l@{}}(1)\\ High\end{tabular}         & \begin{tabular}[c]{@{}l@{}}(2)\\ Upper-Middle \end{tabular} & \begin{tabular}[c]{@{}l@{}}(3)\\ Lower-Middle \end{tabular}  & \begin{tabular}[c]{@{}l@{}}(4)\\ Low \end{tabular}         \\ \hline
+Lawmaker Ratio (\%)                          & \begin{tabular}[c]{@{}l@{}}-0.0006\\ (0.01)\end{tabular}          & \begin{tabular}[c]{@{}l@{}}-0.0041\\ (0.029)\end{tabular}         & \begin{tabular}[c]{@{}l@{}}0.04$^{***}$\\ (0.008)\end{tabular}     & \begin{tabular}[c]{@{}l@{}}0.01\\ (0.03)\end{tabular}            \\
+GDP per capita (US\$)                         & \begin{tabular}[c]{@{}l@{}}0.00003$^{***}$\\ (0.000)\end{tabular} & \begin{tabular}[c]{@{}l@{}}-0.00007\\ (0.00005)\end{tabular}      & \begin{tabular}[c]{@{}l@{}}0.0002\\ (0.0001)\end{tabular}          & \begin{tabular}[c]{@{}l@{}}-0.0012\\ (0.0008)\end{tabular}       \\
+Population 64+ (\%)                           & \begin{tabular}[c]{@{}l@{}}0.435$^{***}$\\ (0.06)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-0.292$^{*}$\\ (0.123)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-0.008\\ (0.126)\end{tabular}           & \begin{tabular}[c]{@{}l@{}}-3.1$^{***}$\\ (0.652)\end{tabular}   \\
+Population 0-14 (\%)                          & \begin{tabular}[c]{@{}l@{}}-0.063$^{*}$\\ (0.027)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-0.234$^{*}$\\ (0.084)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-0.256$^{***}$\\ (0.056)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}-0.209$^{***}$\\ (0.151)\end{tabular} \\
+TB Cases & \begin{tabular}[c]{@{}l@{}}0.013\$\\ (0.011)\end{tabular}         & \begin{tabular}[c]{@{}l@{}}0.004$^{***}$\\ (0.0008)\end{tabular}  & \begin{tabular}[c]{@{}l@{}}-0.0013$^{***}$\\ (0.0014)\end{tabular} & \begin{tabular}[c]{@{}l@{}}-0.003$^{***}$\\ (0.002)\end{tabular} \\
+Labor Participation Rate (\%)               & \begin{tabular}[c]{@{}l@{}}0.04$^{*}$\\ (0.016)\end{tabular}      & \begin{tabular}[c]{@{}l@{}}0.013\\ (0.035)\end{tabular}           & \begin{tabular}[c]{@{}l@{}}0.048\\ (0.034)\end{tabular}            & \begin{tabular}[c]{@{}l@{}}0.115$^{\#}$\\ (0.057)\end{tabular}    \\
+Foreign Aid (US\$)        &                                                                   &                                                                   & \begin{tabular}[c]{@{}l@{}}-0.011$^{***}$\\ (0.002)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}0.006$^{\#}$\\ (0.003)\end{tabular}    \\
+Fixed Effect: Year                            & YES                                                               & YES                                                               & YES                                                                & YES                                                              \\
+Fixed Effect: Country                         & YES                                                               & YES                                                               & YES                                                                & YES                                                              \\
+Observations:                                 & 874                                                               & 1064                                                              & 1140                                                               & 665                                                              \\
+Adjust $R^2$                                  & 0.915                                                             & 0.903                                                             & 0.878                                                              & 0.475                                                            \\ \hline
+\end{tabular}
+\begin{tablenotes}
+\small
+      \item Note: Notation $***$,$**$,$*$,$\#$ denotes a significant level of 0.0001, 0.001, 0.05, and 0.1 respectively.
+    \end{tablenotes}
+    \caption{Regression results after breaking the country into HighIncome, Upper-Middle Income, Lower-Middle Income, Low Income groups based on the country's GNI per capita. }
+    \label{Income Level}
+\end{table}
+}
+
+After breaking down the data set into subsamples, we could still observe a non-significant coefficient of lawmaker ratio variables in high-income, upper-middle-income, and low-income countries.
+However, the lawmaker variables present a positive, significant coefficient for the lower-middle-income countries.
+This indicates that in the lower-middle-income countries, the increasing representation of females in the legislature positively influences the allocation of the national budget to the health care system. 
+
+One possible explanation for why this relationship only appears in the lower-middle-income countries is that, for those countries, after resolving the problem of mass and extreme poverty which most of the low-income countries are still suffering, those lower-middle-income countries are trying to establish a modern system of society, which including the health care system.
+The presentation of women in the legislature will influence the decision-making process of establishing the healthcare system by influencing the national budget.
+For high-income and upper-middle-income countries, with a well-established health care system, the space left to the lawmakers to infuse their influence is limited.
+This is reflected in the non-significant coefficient results of the lawmaker variable. 
+
+For the low-income countries, it is worth noticing that some of the variables like the GDP per capita and the aging population behave unexpectedly.
+The adjusted $R^2$ for the low-income countries model is also significantly lower than its counterparts, even with both the year fixed effect variables and country fixed effect variables. 
+That might indicate severe omitted variables biased in the low-income countries model. 
+
+\subsubsection{Public versus Private}
+Generally, a country's health care expenditure came from two sources: the public sector and the private sector.
+How a country constructs its healthcare system will largely influence how the country decides the national healthcare budget.
+For instance, Costa Rica provides universal public healthcare coverage to all residents of the country, and more than 30\% of the country's total budget is allocated to the health sector.
+It is reasonable to assume that country with a strong private healthcare provider system may rely less on government funding for providing healthcare, and hence plan less budget for the sector.
+Therefore, in this section, we isolate countries with private dominant healthcare systems from public dominate countries.
+We presume that the female lawmakers in a country with a private-dominant system will not influence the healthcare budget significantly, since healthcare might not be the priority of the government's agenda.
+
+\begin{table}[]
+\centering
+\addtolength{\tabcolsep}{-2.5pt}
+\begin{tabular}{l|ll}
+\hline
+                                              & \begin{tabular}[c]{@{}l@{}}(1)\\ Public-Dominant\end{tabular}     & \begin{tabular}[c]{@{}l@{}}(2)\\ Private-Dominant\end{tabular}     \\ \hline
+Female Lawmaker (\%)                          & \begin{tabular}[c]{@{}l@{}}0.0167$^{\#}$\\ (0.009)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.005\\ (0.015)\end{tabular}            \\
+GDP per capita (US\$)                         & \begin{tabular}[c]{@{}l@{}}0.000019$^{**}$\\ (0.000)\end{tabular} & \begin{tabular}[c]{@{}l@{}}0.00007$^{***}$\\ (0.0000)\end{tabular} \\
+Population 64+ (\%)                           & \begin{tabular}[c]{@{}l@{}}0.371$^{***}$\\ (0.06)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.243$^{*}$\\ (0.089)\end{tabular}      \\
+Population 0-14 (\%)                          & \begin{tabular}[c]{@{}l@{}}-0.15$^{***}$\\ (0.027)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}-0.25$^{**}$\\ (0.08)\end{tabular}      \\
+TB Cases & \begin{tabular}[c]{@{}l@{}}0.002$^{***}$\\ (0.0004)\end{tabular}  & \begin{tabular}[c]{@{}l@{}}0.0005\\ (0.0013)\end{tabular}          \\
+Labor Participation Rate (\%)               & \begin{tabular}[c]{@{}l@{}}0.03$^{*}$\\ (0.013)\end{tabular}      & \begin{tabular}[c]{@{}l@{}}0.15$^{***}$\\ (0.021)\end{tabular}     \\
+Fixed Effect: Year                            & YES                                                               & YES                                                                \\
+Fixed Effect: Country                         & YES                                                               & YES                                                                \\
+Observations:                                 & 1570                                                              & 748                                                                \\
+Adjust $R^2$                                  & 0.895                                                             & 0.838                                                              \\ \hline
+\end{tabular}
+\begin{tablenotes}
+\small
+      \item Note: Notation $***$,$**$,$*$,$\#$ denotes a significant level of 0.0001, 0.001, 0.05, and 0.1 respectively.
+    \end{tablenotes}
+    \caption{Regression results after breaking the country's healthcare system into public-dominant and private-dominant based on the proportion of public and private healthcare expenditure to the total healthcare expenditure}
+    \label{Public pirvate}
+\end{table}
+
+From the regression results in Table (\ref{Public pirvate}), we could observe that compared with private-dominant countries, the gender of lawmakers has a strong influence on the country's budget allocation result.
+While the coefficient is only significant on a 10\% significant level, it is consistent with the assumption.
+All other variables' coefficients have the expected sign.
+
+The low significant level of the lawmaker variable could be explained by the "overpower" theory we provided in the previous section.
+The dominant variables, namely GDP per capita, demographic pattern, and the TB cases, all have coefficients at a high significant level.
+These variables provide a majority part of the explaining power and hence provide limited space for the lawmaker to influence the issue. 
+
+\subsection{Rubber Stamp or Power House: The Influence of Democratic Level}
+\label{democracy compare}
+The influence of the legislature varies dramatically across countries.
+In a well-developed democratic system, parliament's members as elected officials have a direct influence on the country's development agenda.
+In contrast, the legislatures in autocracy regimes are called a "rubber stamp" since they can not play the role of balance and check but approve bills or make laws based on the will of the country's leading power. 
+
+In this section, we take political freedom into the consideration when measuring the relationship between lawmakers' gender and the national healthcare budget.
+The baseline assumption for this study is even in autocracy countries where the parliament has limited power and influence, the presentation of female members shall still have an influence on the decision-making, compared to countries with fewer female members. 
+
+\subsubsection{Quasi Difference-in-Difference}
+\label{QDID}
+%TODO introduction part of the political influence
+
+For purpose of this case study, we augmented the model (\ref{fundation model}) introduced in section \ref{Model} by adding binary variables described in the section \ref{Binary Variable}.
+\begin{align}
+\label{DID model}	
+	Health_{i,t} = \beta_1Lawmaker_{i, t-1} + \lambda\boldsymbol{X}_{i,t} + \beta_{2}B^{Demo}_{i,t} + \beta_3&B^{Lawmaker}_{i, t - 1} +\\ \notag
+	&\beta_4(B^{Demo}_{i, t}\times B^{Lawmaker}_{i, t-1}) + \alpha_i + \gamma_t + \epsilon_{i, t}
+\end{align}
+We refer this model as quasi difference-in-difference model.
+The idea of this model is directly borrowed from the difference in difference model.
+Here, $B^{Dmo}_{i, t}$ and $B^{Lawmaker}_{i, t-1}$ denotes two binary variables of democracy level and lawmaker ratio above or below average respectively.
+We also includes the interaction term of these two binary variables into the model. 
+Only when a country has both been classified as a democracy, and have female lawmaker proportion higher than average the three variables will be presented in the model simultaneously. 
+
+%\subsubsection{Power House versus Rubber Stamp}
+
+\subsubsection{Results of Democracy Level Study}
+From the regression results, we found no significant evidence to prove that the democracy level, work togeter with the female lawmaker ratio, will influence the healthcare expenditure. 
+\begin{table}[]
+\centering
+\addtolength{\tabcolsep}{-5pt}
+\begin{tabular}{l|lllllll}
+\hline
+                         & \begin{tabular}[c]{@{}l@{}}(1)\\ All Countries\end{tabular}        & \begin{tabular}[c]{@{}l@{}}(2)\\ All Countries\end{tabular}        & \begin{tabular}[c]{@{}l@{}}(3)\\ Working\\ Democracy\end{tabular} & \begin{tabular}[c]{@{}l@{}}(4)\\ Deficient\\ Democracy\end{tabular} & \begin{tabular}[c]{@{}l@{}}(5)\\ Hybrid\\ Regime\end{tabular}     & \begin{tabular}[c]{@{}l@{}}(6)\\ Moderate\\ Autocracy\end{tabular} & \begin{tabular}[c]{@{}l@{}}(7)\\ Hard\\ Autocracy\end{tabular}    \\ \hline
+Female Lawmaker (\%)     & \begin{tabular}[c]{@{}l@{}}0.0096\\ (0.0106)\end{tabular}          &                                                                    & \begin{tabular}[c]{@{}l@{}}-0.0109\\ (0.013)\end{tabular}         & \begin{tabular}[c]{@{}l@{}}0.023\\ (0.014)\end{tabular}             & \begin{tabular}[c]{@{}l@{}}0.011\\ (0.0216)\end{tabular}          & \begin{tabular}[c]{@{}l@{}}-0.01\\ (0.024)\end{tabular}            & \begin{tabular}[c]{@{}l@{}}0.029\\ (0.02)\end{tabular}            \\
+GDP per capita (US\$)    & \begin{tabular}[c]{@{}l@{}}0.000035$^{***}$\\ (0.000)\end{tabular} & \begin{tabular}[c]{@{}l@{}}0.00003$^{***}$\\ (0.0000)\end{tabular} & \begin{tabular}[c]{@{}l@{}}-0.000013\\ (0.0000)\end{tabular}      & \begin{tabular}[c]{@{}l@{}}0.0001$^{**}$\\ (0.0000)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.00003$^{\#}$\\ (0.0000)\end{tabular} & \begin{tabular}[c]{@{}l@{}}0.0001$^{**}$\\ (0.000)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-0.00006$^{\#}$\\ (0.000)\end{tabular} \\
+Population 64+ (\%)      & \begin{tabular}[c]{@{}l@{}}0.271$^{***}$\\ (0.04)\end{tabular}     & \begin{tabular}[c]{@{}l@{}}0.266$^{***}$\\ (0.04)\end{tabular}     & \begin{tabular}[c]{@{}l@{}}0.447$^{***}$\\ (0.072)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}-0.068\\ (0.098)\end{tabular}            & \begin{tabular}[c]{@{}l@{}}0.751$^{***}$\\ (0.135)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}0.306$^{\#}$\\ (0.161)\end{tabular}     & \begin{tabular}[c]{@{}l@{}}-0.055\\ (0.2)\end{tabular}            \\
+Population 0-14 (\%)     & \begin{tabular}[c]{@{}l@{}}-0.261$^{***}$\\ (0.031)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}-0.262$^{***}$\\ (0.03)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-0.056\\ (0.076)\end{tabular}          & \begin{tabular}[c]{@{}l@{}}-0.345$^{***}$\\ (0.053)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-0.059\\ (0.075)\end{tabular}          & \begin{tabular}[c]{@{}l@{}}-0.378$^{***}$\\ (0.083)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}-0.327$^{**}$\\ (0.095)\end{tabular}   \\
+TB Case                  & \begin{tabular}[c]{@{}l@{}}0.0029$^{***}$\\ (0.0006)\end{tabular}  & \begin{tabular}[c]{@{}l@{}}0.003$^{***}$\\ (0.000)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-0.0013\\ (0.0016)\end{tabular}        & \begin{tabular}[c]{@{}l@{}}0.0035$^{*}$\\ (0.001)\end{tabular}      & \begin{tabular}[c]{@{}l@{}}0.013$^{**}$\\ (0.004)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.012$^{***}$\\ (0.001)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-0.0003\\ (0.005)\end{tabular}         \\
+Labor Participation (\%) & \begin{tabular}[c]{@{}l@{}}0.065$^{***}$\\ (0.015)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.066$^{***}$\\ (0.014)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.116$^{***}$\\ (0.027)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}0.026\\ (0.024)\end{tabular}             & \begin{tabular}[c]{@{}l@{}}0.118$^{**}$\\ (0.027)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.256$^{***}$\\ (0.044)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-0.197$^{***}$\\ (0.031)\end{tabular}  \\
+Lawmaker Binary          & \begin{tabular}[c]{@{}l@{}}-0.15\\ (0.14)\end{tabular}             & \begin{tabular}[c]{@{}l@{}}-0.089\\ (0.126)\end{tabular}           &                                                                   &                                                                     &                                                                   &                                                                    &                                                                   \\
+Democracy Binary         & \begin{tabular}[c]{@{}l@{}}-0.145\\ (0.141)\end{tabular}           & \begin{tabular}[c]{@{}l@{}}-0.156\\ (0.143)\end{tabular}           &                                                                   &                                                                     &                                                                   &                                                                    &                                                                   \\
+Interaction              & \begin{tabular}[c]{@{}l@{}}-0.025\\ (0.198)\end{tabular}           & \begin{tabular}[c]{@{}l@{}}-0.032\\ (0.199)\end{tabular}           &                                                                   &                                                                     &                                                                   &                                                                    &                                                                   \\
+Democracy Index          &                                                                    &                                                                    & \begin{tabular}[c]{@{}l@{}}-7.223\\ (5.519)\end{tabular}          & \begin{tabular}[c]{@{}l@{}}6.953$^{***}$\\ (1.268)\end{tabular}     & \begin{tabular}[c]{@{}l@{}}-4.331\\ (2.87)\end{tabular}           & \begin{tabular}[c]{@{}l@{}}6.579\\ (4.842)\end{tabular}            & \begin{tabular}[c]{@{}l@{}}-1.553\\ (4.222)\end{tabular}          \\
+Fixed Effect: Year       & YES                                                                & YES                                                                & YES                                                               & YES                                                                 & YES                                                               & YES                                                                & YES                                                               \\
+Fixed Effect: Country    & YES                                                                & YES                                                                & YES                                                               & YES                                                                 & YES                                                               & YES                                                                & YES                                                               \\
+Observations:            & 2318                                                               & 2318                                                               & 754                                                               & 678                                                                 & 377                                                               & 245                                                                & 121                                                               \\
+Adjust $R^2$             & 0.893                                                              & 0.893                                                              & 0.916                                                             & 0.831                                                               & 0.867                                                             & 0.834                                                              & 0.922                                                             \\ \hline
+\end{tabular}
+\begin{tablenotes}
+\small
+      \item Note: Notation $***$,$**$,$*$,$\#$ denotes a significant level of 0.0001, 0.001, 0.05, and 0.1 respectively.
+    \end{tablenotes}
+    \caption{Regression results after considering the country's democracy level. }
+    \label{Democracy}
+\end{table}
+
+%TODO the result from the table
+From Table (\ref{Democracy}), all three binary variables are insignificant at every significance level, indicating the lawmakers' gender may make no influence on the country's healthcare budget.
+That says, even in democratic countries where the legislature is one of the most powerful institutes, gender has limited influence on healthcare expenditure.
+
+For further analysis, we categorized the countries into five subgroups based on the criteria provided by the data source. 
+The regression suggested that only in deficient democracy, where the country presents all democracy characteristics but some of the characteristics are underdeveloped, the level of democracy will have a strong and positive influence on the country's healthcare budget.
+The rationale behind this we presume is similar to the result we observed in the previous sector where countries categorized as middle-lower income's healthcare expenditure will be significantly influenced by the number of female lawmakers. 
+In deficient democracy, the development of the system relies on the opinions of different classes and interest-group, and this provides the opportunity for females to exert their influence, and hence reflects on the regression as a significant coefficient. 
+
+\subsection{Budget Maker or Budget Approver: The Influence from Administration Branch}
+In most of the country, the legislative branch of the government is in charge of auditing and approving the country's budget.
+The real budget maker is the administrative branch of the government.
+Take Australia, a parliamentary system country, as an example.
+The government (usually the Treasury takes the lead) and the cabinet are in charge of making the annual federal budget, and after a series of reviews, the final budget plan will be sent to the Parliament for approval.
+
+Therefore the influence of the government should also be taken into consideration when discussing the national budget.
+In this case study, we employ a quasi-DID approach from the previous sector (\ref{democracy compare}).
+New variable measures the gender of the country's head of state or head of government, and its intersection term with the lawmaker binary variable are added to the model.
+
+Based on the previous study (see \citeNP{Funk2018},\citeNP{Irma2011}, and \citeNP{Mavisakalyan2014}), it is reasonable to assume those female leaders lean to allocate the national budget to health care, education, and social welfare. 
+
+However, the results from regression do not follow previous studies.
+The results suggest a no-significant relationship between the leader's gender, the lawmaker's gender, and the health care expenditures.
+
+\begin{table}[]
+\centering
+\addtolength{\tabcolsep}{-2.5pt}
+\begin{tabular}{l|lllll}
+\hline
+                                & \begin{tabular}[c]{@{}l@{}}(1)\\ All Countries\end{tabular}        & \begin{tabular}[c]{@{}l@{}}(2)\\ High\end{tabular}                 & \begin{tabular}[c]{@{}l@{}}(3)\\ Upper-Middle\end{tabular}       & \begin{tabular}[c]{@{}l@{}}(4)\\ Lower-Middle\end{tabular}       & \begin{tabular}[c]{@{}l@{}}(5)\\ Low\end{tabular}                 \\ \hline
+Female Lawmaker (\%)            & \begin{tabular}[c]{@{}l@{}}0.0129\\ (0.011)\end{tabular}           & \begin{tabular}[c]{@{}l@{}}0.018\\ (0.011)\end{tabular}            & \begin{tabular}[c]{@{}l@{}}-0.0006\\ (0.02)\end{tabular}         & \begin{tabular}[c]{@{}l@{}}0.065$^{***}$\\ (0.011)\end{tabular}  & \begin{tabular}[c]{@{}l@{}}0.006\\ (0.021)\end{tabular}           \\
+GDP per capita (US\$)           & \begin{tabular}[c]{@{}l@{}}0.000035$^{***}$\\ (0.000)\end{tabular} & \begin{tabular}[c]{@{}l@{}}0.00003$^{***}$\\ (0.0000)\end{tabular} & \begin{tabular}[c]{@{}l@{}}-0.00004\\ (0.0000)\end{tabular}      & \begin{tabular}[c]{@{}l@{}}0.0004\\ (0.0002)\end{tabular}        & \begin{tabular}[c]{@{}l@{}}-0.0015$^{\#}$\\ (0.0008)\end{tabular} \\
+Population 64+ (\%)             & \begin{tabular}[c]{@{}l@{}}0.267$^{***}$\\ (0.04)\end{tabular}     & \begin{tabular}[c]{@{}l@{}}0.448$^{***}$\\ (0.057)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-0.281$^{*}$\\ (0.133)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}0.327\\ (0.345)\end{tabular}          & \begin{tabular}[c]{@{}l@{}}-2.775$^{***}$\\ (0.522)\end{tabular}  \\
+Population 0-14 (\%)            & \begin{tabular}[c]{@{}l@{}}-0.262$^{***}$\\ (0.031)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}-0.035\\ (0.03)\end{tabular}            & \begin{tabular}[c]{@{}l@{}}-0.223$^{*}$\\ (0/079)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}-0.288$^{***}$\\ (0.071)\end{tabular} & \begin{tabular}[c]{@{}l@{}}-0.228$^{\#}$\\ (0.115)\end{tabular}   \\
+TB Case                         & \begin{tabular}[c]{@{}l@{}}0.0029$^{***}$\\ (0.0006)\end{tabular}  & \begin{tabular}[c]{@{}l@{}}0.011\\ (0.011)\end{tabular}            & \begin{tabular}[c]{@{}l@{}}0.004$^{***}$\\ (0.0008)\end{tabular} & \begin{tabular}[c]{@{}l@{}}-0.002\\ (0.001)\end{tabular}         & \begin{tabular}[c]{@{}l@{}}-0.001\\ (0.002)\end{tabular}          \\
+Labor Participation Rate (\%) & \begin{tabular}[c]{@{}l@{}}0.066$^{***}$\\ (0.015)\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.033$^{*}$\\ (0.014)\end{tabular}      & \begin{tabular}[c]{@{}l@{}}0.028\\ (0.038)\end{tabular}          & \begin{tabular}[c]{@{}l@{}}0.034\\ (0.025)\end{tabular}          & \begin{tabular}[c]{@{}l@{}}0.094$^{*}$\\ (0.04)\end{tabular}      \\
+Foreign Aid (US\$)              &                                                                    &                                                                    &                                                                  & \begin{tabular}[c]{@{}l@{}}-0.009$^{**}$\\ (0.002)\end{tabular}  & \begin{tabular}[c]{@{}l@{}}0.007$^{\#}$\\ (0.003)\end{tabular}    \\
+Lawmaker Binary                 & \begin{tabular}[c]{@{}l@{}}-0.2\\ (0.119)\end{tabular}             & \begin{tabular}[c]{@{}l@{}}-0.692$^{*}$\\ (0.302)\end{tabular}     & \begin{tabular}[c]{@{}l@{}}-0.29\\ (0.228)\end{tabular}          & \begin{tabular}[c]{@{}l@{}}-0.638$^{*}$\\ (0.242)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}0.33\\ (0.481)\end{tabular}            \\
+Leader Gender                   & \begin{tabular}[c]{@{}l@{}}0.185\\ (0.192)\end{tabular}            & \begin{tabular}[c]{@{}l@{}}0.352\\ (0.276)\end{tabular}            & \begin{tabular}[c]{@{}l@{}}0.112\\ (0.266)\end{tabular}          & \begin{tabular}[c]{@{}l@{}}-1.685$^{*}$\\ (0.763)\end{tabular}   & \begin{tabular}[c]{@{}l@{}}-0.151\\ (0.477)\end{tabular}          \\
+Interaction                     & \begin{tabular}[c]{@{}l@{}}0.005\\ (0.239)\end{tabular}            & \begin{tabular}[c]{@{}l@{}}-0.379\\ (0.370)\end{tabular}           & \begin{tabular}[c]{@{}l@{}}-0.291\\ (0.685)\end{tabular}         & \begin{tabular}[c]{@{}l@{}}0.472\\ (1.09)\end{tabular}           & \begin{tabular}[c]{@{}l@{}}-0.136\\(1.32)\end{tabular}    \\
+Fixed Effect: Year              & YES                                                                & YES                                                                & YES                                                              & YES                                                              & YES                                                               \\
+Fixed Effect: Country           & YES                                                                & YES                                                                & YES                                                              & YES                                                              & YES                                                               \\
+Observations:                   & 2318                                                               & 739                                                                & 641                                                              & 678                                                              & 378                                                               \\
+Adjust $R^2$                    & 0.893                                                              & 0.914                                                              & 0.902                                                            & 0.831                                                            & 0.465                                                             \\ \hline
+\end{tabular}
+\begin{tablenotes}
+\small
+      \item Note: Notation $***$,$**$,$*$,$\#$ denotes a significant level of 0.0001, 0.001, 0.05, and 0.1 respectively.
+    \end{tablenotes}
+    \caption{Regression results after taking the gender of the country leader into the model. Countries are break into small groud based on the national income level (measured by GNI per capita) }
+    \label{leader}
+\end{table}
+
+%%Insert the description of the regression results
+
+There are several explanations for this result.
+The study made by \citeA{Mavisakalyan2014} includes not only the head of state/government but also the gender of the cabinet members to describe the gender features of the administrative branch.
+Alone side the gender of the head of state/government, \citeauthor{Mavisakalyan2014} also includes extra control variables of the country's leader like the race, age, number of offspring, and their genders, etc. 
+Therefore a lack of control may contribute to the difference in conclusion.
+
+\citeA{Irma2011} in his study of India suggested that even though the female indeed makes different decisions than male, such differences will gradually disappear with the political hierarchy arise.
+That says women in a high-level political arena such as national congress or central government may make an indifferent decision than man does.
+Hence, the gender of the country's leader may be less significant to the issues of health care expenditure. 
+
+

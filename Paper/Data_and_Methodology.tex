@@ -1,0 +1,122 @@
+\section{Data and Methodology}
+\label{Data and method}
+
+\subsection{Dependent Variable: health care expenditure to total national budget}
+This paper will use the percentage of a country's health care expenditure to the country's total national expenditure as the measurement of a country's health care expenditure.
+%The first is the percentage of a country's health care expenditure to the country's total national expenditure.
+This variable is calculated by multiplying the health care expenditure per total Gross Domestic Production (GDP) with the inverse of total expenditure per total GDP.
+The GDP uses the U.S. dollar in the observed year as unit.
+A higher value of this variable simply represents the country allocates more budget to the health care sector. 
+Using the ratio between health care expenditure and total expenditure rather than the health care expenditure per GDP avoid the problem that rich country may have a higher GDP base and hence may have a lower health expenditure proportion even if they spend a similar amount of budget on health care than other less developed countries. 
+
+%The other second variable that has been used is the healthcare expenditure per capita, denoted by the U.S. dollar.
+%This variable is a straightforward measurement of the country's expenditure on the health care system.
+% Although this variable is largely influenced by the wealth level of a country, the employment of control variables could handle the problem. 
+
+The data series is collected from World Health Organization (WHO)\footnote{See: https://apps.who.int/nha/database/Select/Indicators/en}
+
+\subsection{Independent Variable: ratio of females lawmakers to the total numbers of lawmakers.}
+The main variable of interest in this study is the ratio of female lawmakers to the total number of lawmakers, and we collect this data from the World Bank.\footnote{See: https://data.worldbank.org/indicator/SG.GEN.PARL.ZS?view=chart}
+This variable represents the level of women's participation in a country's budget-making and policymaking.
+The higher value of this variable means that the corresponding country will have a larger number of women involved in the national level parliament.
+Notice that here the parliament is referred to as both the lower house of the Bicameral System, such as the House of Representatives in the U.S, the House of Common in British, or the House of Deputies in some countries like Rwanda, or the lawmaking body in a Unicameralism system. 
+
+\subsection{Control Variables}
+Suggested by the common practice and literature in the health economic research (see \citeNP{Gerdtham2000} and \citeNP{Hitiris1992}), the data set will contain some control variables to restrict the behaviors of the dependent variable.
+Literature usually suggests that the level of a country's health care expenditure will be determined by three aspects.
+The first is the development level. 
+Wealthy countries tend to have more budget for health care than developing countries or less developed countries.
+Therefore, the data set used in this research contains GDP per capita (U.S. dollar) to capture the development level.
+Demographic had been proved to have a huge influence on the expenditure of the health care system.
+Countries facing aging problems like Japan or Italy tend to allocate more budget to support the medical and other support systems.
+But it is worth noticing that countries with a high ratio of aging population are usually also wealthy countries.
+Here this research will use the proportion of people aged above 64 as an indicator of the aging society.
+Another control variable that connects with demographic is the proportion of youth in the population.
+The proportion of the population aged less than 15 had been used for such measurement.
+The last variable that has been suggested by the literature that could be used to explain the health care expenditure is the level of prevalence of contagious diseases.
+Countries with pandemics tend to spend more budget on public health to curb the disease.
+In this study, Tuberculosis (TB) is the selected disease and we use the number of  incidents of TB per 100,000 people as the indicator.\footnote{For the reason of selecting TB, please read \citeA{Silva2021}.}
+
+Other than the four variables introduced above, this study also included several extra control variables. 
+Considering developing countries, especially countries in Africa rely heavily on foreign aid to help establish the health care system, an extra variable that measured the Official Development Assistance (ODA) is added into the model to capture relevant influence.
+This ODA variable measures the amount of aid (unit in U.S dollar) a country received or paybacked during one calendar year.
+Inspired by \citeA{Sung2003} and \citeA{Jayasuriya2013}, this model will contain the female labor participation level variable into the model.
+This variable helps eliminate the influence of a better system.
+In other words, a country with more females participating in the labor market or has more female lawmakers may indicate the country is more modern since it encourages the participation of women workers, and therefore more likely to provide a better health system.
+By including the labor participation labor, we could largely eliminate such influence.
+Finally, the democracy index variable will be used to test the different influences of legislative bodies in democratic countries and non-democratic countries.
+By including this variable, the model will reveal the influence of the presentation of women, even when the law-making body is just a rubber stamp.
+
+The primary source of the data is the World Bank Open Data\footnote{visit: https://data.worldbank.org/}.
+And the measurement of democracy level comes from the Democracy Matrix.\footnote{This project is hosted by the University of Wurzburg. Source: https://www.democracymatrix.com/download}
+The summary statistic is presented in Table \ref{Summary Statistics} in the Appendix.
+
+\subsection{Extra Variables: Binary and Intersection}
+\label{Binary Variable}
+%TODO finish binary and intersection
+To further investigate the influence of women's participation in the legislature, extra binary variables are considered.
+
+The first binary variable represents the level of that country's women's participation in the legislature.
+For every year, we calculate the average percentage of seats that have been held by female lawmakers from our sample.
+If a country in a specific year has a ratio higher than that year's world average, we will give that country at that year the dummy variable value 1.
+Otherwise, the variable will have a value of 0.
+
+The second variable relates to the democratic level.
+The data set we used in this research to measure the democratic level, the Democracy Matrix, provides a category of the different regimes.
+Based on the rank and score, the Democracy Matrix divided all countries into five groups: Working Democracy, Deficient Democracy, Hybrid Regime, Moderate Autocracy, and Hard Autocracy.
+For the construction of the democracy binary, we give every country labeled as either Working Democracy or Deficient Democracy a value of 1, and countries belonging to the other three groups will have a value of 0.
+We then multiply these two binary variables to obtain the intersection term.
+Only the country that has been democratic and has a ratio of female lawmakers higher than the world average can have an intersection term value equal to 1.
+All other countries will have the intersection variable equal to 0.
+
+The last binary variable represents the gender of the head of state or head of government. 
+For every country and every year, we documented the gender of the country's leader.
+If the leader is female, this gender variable will have a value of 1, otherwise being 0.
+
+\subsection{Sample Size, Time Period, and Grouping}
+A collection of panel data which contains 122 countries across 20 years (2000 - 2019) will be used in this study.
+The observations are made annually, so each country will have 20 observations.
+The data set covered the major economies and countries at different development levels.
+The choice of the time frame is restricted by the availability of data.
+From the original data, countries with missing data more than 3 observations for any single variable series are dropped.
+The rest missing data value is replaced by the average value of other observed data. 
+
+Considering the heterogeneous nature of countries, the whole data sample is further broken down into smaller groups for the convenience of analysis.
+Based on the criteria provided by the World Bank\footnote{see:https://blogs.worldbank.org/opendata/new-world-bank-country-classifications-income-level-2021-2022 for latest criteria}, every country was categorized as either a High-Income country, Upper-middle Income country, Lower-middle Income country, or Low-Income country, base on the country's Gross Net Income (GNI) per capita of the year and the World Bank criteria of that year.
+Notice, due to the changing landscape of both global economic, and country-level economics, the category of income level for a country will change dynamically.
+That says a country that has been labeled as an Upper-middle Income country may drop to a Lower-middle Income country in the next year. 
+%A brief table presenting the summary statistics of each country's group's variables is provided in the Appendix. 
+
+Due to the differences in the health care system, the role government plays in providing health care varies across countries.
+In countries like Costa Rica or some Welfare states, the public sector is responsible for most of the health care services.
+But in some countries where the state power is weak, health care is bolstered primarily by the private provider. 
+Therefore, we labeled countries with more than half of health care expenditure coming from the private sector as private-dominant countries, and the rest are categorized as public-dominant countries.
+%TODO consider adding a wrap-up sentence
+
+
+
+
+
+\subsection{Model}
+\label{Model}
+The main goal of this study is to investigate the relationship between the health care expenditure and the number of seats held by females in the national parliament.
+The baseline model that has been used in this study is a panel data fixed-effect model:
+\begin{align}
+\label{fundation model}
+	Health_{i,t} = \beta_1 Lawmaker_{i,t-1} + \lambda\mathbf{X}_{i,t} + \alpha_i + \gamma_t + \epsilon_{i,t}
+\end{align}
+
+The under script $i$ indicates the country, and $t$ indicates the year of observation.
+The left-hand side variable $Health_{i,t}$ is the health care expenditure variable for country $i$ at year $t$.
+$Lawmaker$ is the proportion of seats held by female lawmakers, and because the parliament usually decides on the next year's national budget, variables in the model had been lagging. 
+The under script for the lawmaker variable has a time indicator as $t-1$.
+Notice that due to this reason, the data been applied to this model will only have 19 observations for every country, hence the $t$ will have values from 2001 to 2019.
+$\beta_{1}$ is the corresponding coefficient of the lawmaker variable.
+
+Matrix $\mathbf{X}_{i, t}$ denotes all control variables described in the previous section, and $\lambda$ denotes the corresponding coefficient of each variable.
+The exact variables inside $\mathbf{X}_{i,t}$ are dependent on the setting of the model.
+For the fixed effect model, $\alpha_i$ and $\gamma_t$ represent the country and the time intercepts.
+The last term $\epsilon_{i,t}$ is the error term.
+
+
+
